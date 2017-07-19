@@ -9,7 +9,7 @@ body {
     color: $texto;
 }
 .bienvenidos {
-    // background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+    background: url("../images/fondo-encabezado.jpg") no-repeat center top;
     color: #fff;
     background-size: cover;
     background-attachment: fixed !important;
@@ -33,7 +33,7 @@ body {
     flex-wrap: wrap;
 }
 .encabezado .logo img {
-    width: 45px;
+    width: 150px;
     height: auto;
 }
 /*Estilos para el boton: buscar y menu*/
@@ -100,4 +100,48 @@ body {
 #menu-principal ul a:hover,
 #menu-principal ul li.active a {
     color: $principal;
+}
+
+.texto-ancabezado{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.texto-ancabezado .display-4 {
+    margin-top: 5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $principal;
+    border-color: transparent;
+    margin-top: 1rem;
+    transition: all .5s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active{
+    background-color: $secundario;
+    border-color: transparent;
+}
+
+.flecha-bajar a{
+    display: inline-block;
+    color: #fff;
+    font-size: 4rem;
+    animation: flecha-animada 2s ease-in-out infinite;
+}
+
+@keyframes flecha-animada {
+    form{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(6px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }

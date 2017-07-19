@@ -6,6 +6,7 @@ body {
   color: #111111; }
 
 .bienvenidos {
+  background: url("../images/fondo-encabezado.jpg") no-repeat center top;
   color: #fff;
   background-size: cover;
   background-attachment: fixed !important;
@@ -117,5 +118,62 @@ body {
 #menu-principal ul a:hover,
 #menu-principal ul li.active a {
   color: #12AFAF; }
+
+.texto-ancabezado {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.texto-ancabezado .display-4 {
+  margin-top: 5rem; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #12AFAF;
+  border-color: transparent;
+  margin-top: 1rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #009500;
+  border-color: transparent; }
+
+.flecha-bajar a {
+  display: inline-block;
+  color: #fff;
+  font-size: 4rem;
+  -webkit-animation: flecha-animada 2s ease-in-out infinite;
+          animation: flecha-animada 2s ease-in-out infinite; }
+
+@-webkit-keyframes flecha-animada {
+  form {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes flecha-animada {
+  form {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 /*# sourceMappingURL=estilos.css.map */
