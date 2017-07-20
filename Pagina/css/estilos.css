@@ -41,7 +41,7 @@ body {
       flex-wrap: wrap; }
 
 .encabezado .logo img {
-  width: 150px;
+  width: 120px;
   height: auto; }
 
 /*Estilos para el boton: buscar y menu*/
@@ -131,7 +131,7 @@ body {
           align-items: center; }
 
 .texto-ancabezado .display-4 {
-  margin-top: 5rem; }
+  margin-top: 6rem; }
 
 .btn-primary {
   color: #fff;
@@ -213,5 +213,103 @@ LA AGENCIA
 
 .tu-mejor-eleccion ul li {
   min-height: 9rem; }
+
+/*********************************
+SECCION SERVICIOS
+************************************* */
+.servicios {
+  background: url("../images/fondo_servicios.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed !important;
+  color: #fff; }
+
+.servicios article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0; }
+
+.servicios img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+  overflow: hidden;
+  margin-right: 1rem; }
+
+.servicios h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+.servicios h3 a {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none; }
+
+.servicios h3 a::after {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-size: 2.2rem;
+  margin-left: 1rem;
+  opacity: .5;
+  position: relative;
+  left: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.servicios h3 a:hover::after {
+  left: -0.5rem;
+  opacity: 1;
+  color: #12AFAF; }
+
+/*********************************
+SECCION ULTIMAS PROMOCIONES
+************************************* */
+.ultimas-promociones a {
+  text-decoration: none; }
+
+.ultimas-promociones a h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #111111; }
+
+.ultimas-promociones .container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.ultimas-promociones .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .5rem 0; }
+
+.ultimas-promociones .owl-next,
+.ultimas-promociones .owl-prev {
+  font-size: 3rem;
+  margin: 0 .5rem;
+  color: #12AFAF;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease; }
+
+.ultimas-promociones .owl-next:hover,
+.ultimas-promociones .owl-prev:hover {
+  color: #009500; }
 
 /*# sourceMappingURL=estilos.css.map */

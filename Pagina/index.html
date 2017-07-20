@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/estilos.css">
 
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Cargar galeria de imagenes-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
     <!-- Cargando Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <title>Biodiagnostic</title>
@@ -137,27 +139,68 @@
     </div>
 </section>
 
-<main class="servicios">
-    <h2>Nuestros Servicios</h2>
-    <article>
-        <img src="images/servicio-1.svg" alt="servicio1">
-        <h3>Servicio #1</h3>
-    </article>
-    <article>
-        <img src="images/servicio-2.svg" alt="servicio2">
-        <h3>Servicio #2</h3>
-    </article>
-    <article>
-        <img src="images/servicio-3.svg" alt="servicio3">
-        <h3>Servicio #3</h3>
-    </article>
+<main class="servicios py-1">
+    <div class="container">
+        <h2 class="text-xs-center font-weight-bold">Nuestros Servicios</h2>
+        <div class="row">
+            <article class="col-md-4">
+                <img src="images/servicio-1.svg" alt="servicio1">
+                <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit #1</a></h3>
+                <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto
+                    incidunt odit perspiciatis quaerat quam quibuariatur quae.</p>
+                <a href="#" class="btn btn-secondary hidden-sm-down">Más información</a>
+            </article>
+            <article class="col-md-4">
+                <img src="images/servicio-2.svg" alt="servicio2">
+                <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit #2</a></h3>
+                <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto
+                    incidunt odit perspiciatis quaerat quam quibusdam quos suscipit tempore, veritatis! Beatae
+                    blanditiis iusto maiores necessitatibus nulla o.</p>
+                <a href="#" class="btn btn-secondary hidden-sm-down">Más información</a>
+            </article>
+            <article class="col-md-4">
+                <img src="images/servicio-3.svg" alt="servicio3">
+                <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit #3</a></h3>
+                <p class="hidden-sm-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto
+                    incidunt odit perspiciatis quaerat quam quibusdam quos suscipit tempore, veritatis! Beatae
+                    blanditiis iusto maiores necessitatibus nulla obcaecati optio pariatur quae.</p>
+                <a href="#" class="btn btn-secondary hidden-sm-down">Más información</a>
+            </article>
+        </div>
+    </div>
 </main>
 
-<section class="ultimos-proyectos">
-    <h2>Últimos proyectos</h2>
-    <a href="#">
-        <h4>App Lima travel</h4>
-    </a>
+
+<section class="ultimas-promociones py-1">
+    <div class="container">
+        <h2 class="text-xs-center font-weight-bold">Últimas promociones</h2>
+        <div class="owl-carousel">
+            <a href="#">
+                <h4>Promocion #1</h4>
+                <img src="images/eleccion_01.svg">
+            </a>
+            <a href="#">
+                <h4>Promocion #2</h4>
+                <img src="images/eleccion_02.svg">
+            </a>
+            <a href="#">
+                <h4>Promocion #3</h4>
+                <img src="images/eleccion_06.svg">
+            </a>
+            <a href="#">
+                <h4>Promocion #4</h4>
+                <img src="images/eleccion_05.svg">
+            </a>
+            <a href="#">
+                <h4>Promocion #5</h4>
+                <img src="images/eleccion_03.svg">
+            </a>
+            <a href="#">
+                <h4>Promocion #6</h4>
+                <img src="images/eleccion_04.svg">
+            </a>
+        </div>
+    </div>
 </section>
 
 <footer class="piedepagina" role="contentinfo">
@@ -172,5 +215,33 @@
 <a href="#" class="ir-arriba">ir arriba</a>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        autoWidth: false,
+        navText: ['<i class="fa fa-arrow-circle-left" title="Anterior"></i>', '<i class="fa  fa-arrow-circle-right" title="Siguiente"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            500: {
+                items: 2,
+                margin: 20
+            },
+            800: {
+                items: 3,
+                margin: 20
+            },
+            1000: {
+                items: 4,
+                margin: 20
+            }
+        }
+    })
+
+</script>
 </body>
 </html>
