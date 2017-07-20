@@ -175,5 +175,43 @@ body {
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+/*********************************
+LA AGENCIA
+ */
+.agencia {
+  background: #12AFAF;
+  color: #fff; }
+
+.agencia img {
+  margin: 0 auto;
+  display: block; }
+
+/*********************************
+LA AGENCIA
+************************************* */
+.tu-mejor-eleccion h2 span {
+  color: #12AFAF; }
+
+.tu-mejor-eleccion ul,
+.tu-mejor-eleccion ul li {
+  list-style: none; }
+
+.tu-mejor-eleccion ul li .fa {
+  list-style: none;
+  font-size: 2.3rem;
+  background: #009500;
+  border-radius: 50%;
+  width: 4.7rem;
+  height: 4.7rem;
+  line-height: 4.7rem;
+  color: #fff; }
+
+.tu-mejor-eleccion ul li .contenedor-eleccion h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: .8rem; }
+
+.tu-mejor-eleccion ul li {
+  min-height: 9rem; }
 
 /*# sourceMappingURL=estilos.css.map */
