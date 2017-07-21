@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 15px; }
 
@@ -326,5 +327,36 @@ SECCION ULTIMAS PROMOCIONES
 .ultimas-promociones .owl-next:hover,
 .ultimas-promociones .owl-prev:hover {
   color: #009500; }
+
+/*********************************
+PIE DE PÁGINA
+************************************* */
+.piedepagina {
+  background: #111111;
+  color: #fff;
+  text-align: center;
+  font-size: .9rem; }
+
+.piedepagina .redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.piedepagina .redes-sociales a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 .5rem;
+  opacity: .7;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease; }
+
+.piedepagina .redes-sociales a:hover {
+  opacity: 1; }
 
 /*# sourceMappingURL=estilos.css.map */
