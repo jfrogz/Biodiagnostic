@@ -377,4 +377,101 @@ PIE DE PÁGINA
   text-decoration: none;
   color: #fff; }
 
+/*-------------------------------------------
+EMPIEZAN LAS MEDIAS QUERIES
+------------------------------------------- */
+@media (min-width: 768px) {
+  #menu-principal {
+    display: block;
+    height: auto !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-left: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+
+  #menu-principal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 0 0; }
+
+  #menu-principal ul li a {
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: 0 .3rem;
+    border-top: 0px;
+    border-bottom: 4px solid transparent; }
+
+  #menu-principal ul li.active a,
+  #menu-principal ul li a:hover {
+    color: #12AFAF;
+    border-bottom: 4px solid;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease; }
+
+  .boton-buscar {
+    margin-left: 1rem;
+    margin-right: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+
+  #bloque-buscar {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: absolute;
+    width: 20rem;
+    right: 2rem;
+    top: 3rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+
+  .servicios article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+
+  .servicios article .fa {
+    width: 9rem;
+    height: 9rem;
+    line-height: 9rem;
+    font-size: 5rem;
+    overflow: hidden;
+    margin-right: 0px;
+    margin-bottom: 1rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+
+  .servicios article:hover .fa {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+
+  .servicios h3 a::after {
+    display: none; }
+
+  .servicios h3 {
+    margin: 0 0 .5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto; }
+
+  .servicios .btn-secondary {
+    margin-top: auto; } }
+
 /*# sourceMappingURL=estilos.css.map */

@@ -344,3 +344,83 @@ PIE DE PÁGINA
     text-decoration: none;
     color: #fff;
 }
+
+/*-------------------------------------------
+EMPIEZAN LAS MEDIAS QUERIES
+------------------------------------------- */
+@media (min-width: 768px) {
+    #menu-principal{
+        display: block;
+        height: auto !important;
+        flex: 0 1 auto;
+        margin-left: auto;
+        order: 1;
+    }
+    #menu-principal ul{
+        display: flex;
+        margin: 0 0 0 0;
+    }
+    #menu-principal ul li a{
+        padding: .8rem;
+        text-transform: capitalize;
+        margin: 0 .3rem;
+        border-top: 0px;
+        border-bottom: 4px solid transparent;
+    }
+    #menu-principal ul li.active a,
+    #menu-principal ul li a:hover{
+        color: $principal;
+        border-bottom: 4px solid;
+        transition: all .5s ease;
+    }
+
+    .boton-buscar{
+        margin-left: 1rem;
+        margin-right: 0;
+        order: 2;
+    }
+    #bloque-buscar {
+        order: 3;
+        position: absolute;
+        width: 20rem;
+        right: 2rem;
+        top: 3rem;
+        transition: all 1s ease;
+    }
+
+    .servicios article{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .servicios article .fa {
+         width: 9rem;
+         height: 9rem;
+         line-height: 9rem;
+         font-size: 5rem;
+         overflow: hidden;
+         margin-right: 0px;
+         margin-bottom: 1rem;
+        transition: all 1s ease;
+     }
+
+    .servicios article:hover .fa {
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+    }
+    .servicios h3 a::after {
+       display: none;
+    }
+
+    .servicios h3 {
+        margin: 0 0 .5rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        flex: 0 1 auto;
+    }
+    .servicios .btn-secondary{
+        margin-top: auto;
+    }
+
+}
