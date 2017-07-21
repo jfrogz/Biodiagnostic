@@ -359,4 +359,22 @@ PIE DE PÁGINA
 .piedepagina .redes-sociales a:hover {
   opacity: 1; }
 
+.ir-arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: #12afaf;
+  text-decoration: none;
+  z-index: 99999;
+  line-height: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #fff; }
+
 /*# sourceMappingURL=estilos.css.map */

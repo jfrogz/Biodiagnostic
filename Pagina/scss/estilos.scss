@@ -326,3 +326,21 @@ PIE DE PÁGINA
     opacity: 1;
 }
 
+.ir-arriba {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: rgb(18,175,175);
+    text-decoration: none;
+    z-index: 99999;
+    line-height: 0;
+    transition: all .5s ease;
+}
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+    outline: 0;
+    text-decoration: none;
+    color: #fff;
+}
