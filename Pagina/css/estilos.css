@@ -227,6 +227,7 @@ SECCION SERVICIOS
 ************************************* */
 .servicios {
   background: url("../images/fondo_servicios3.png") repeat center center;
+  background-color: #000000;
   background-size: cover;
   background-attachment: fixed !important;
   color: #fff; }
