@@ -23,6 +23,7 @@ body {
     padding: .5rem 0;
     transition: all .5s ease;
 }
+
 .encabezado.fondo-menu {
     background: #064e4e;
     padding: 1rem 0;
@@ -110,6 +111,12 @@ body {
 
 .texto-ancabezado .display-4 {
     margin-top: 6rem;
+    font-family: 'Playball', cursive;
+    /*
+    font-family: 'Courgette', cursive;
+    font-family: 'Playball', cursive;
+    font-family: 'Tangerine', cursive;
+     */
 }
 
 .btn-primary {
@@ -181,6 +188,7 @@ LA AGENCIA
     height: 4.7rem;
     line-height: 4.7rem;
     color: #fff;
+    text-align: center;
 }
 
 .tu-mejor-eleccion ul li .contenedor-eleccion h4{
@@ -197,7 +205,7 @@ LA AGENCIA
 SECCION SERVICIOS
 ************************************* */
 .servicios {
-    background: url("../images/fondo_servicios.png") no-repeat center center;
+    background: url("../images/fondo_servicios3.png") repeat center center;
     background-size: cover;
     background-attachment: fixed !important;
     color: #fff;
@@ -386,6 +394,9 @@ EMPIEZAN LAS MEDIAS QUERIES
         right: 2rem;
         top: 3rem;
         transition: all 1s ease;
+    }
+    .servicios{
+        background: url("../images/fondo_servicios.png") no-repeat center center;
     }
 
     .servicios article{

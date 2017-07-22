@@ -132,7 +132,13 @@ body {
           align-items: center; }
 
 .texto-ancabezado .display-4 {
-  margin-top: 6rem; }
+  margin-top: 6rem;
+  font-family: 'Playball', cursive;
+  /*
+  font-family: 'Courgette', cursive;
+  font-family: 'Playball', cursive;
+  font-family: 'Tangerine', cursive;
+   */ }
 
 .btn-primary {
   color: #fff;
@@ -205,7 +211,8 @@ LA AGENCIA
   width: 4.7rem;
   height: 4.7rem;
   line-height: 4.7rem;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 .tu-mejor-eleccion ul li .contenedor-eleccion h4 {
   font-size: 1.2rem;
@@ -219,7 +226,7 @@ LA AGENCIA
 SECCION SERVICIOS
 ************************************* */
 .servicios {
-  background: url("../images/fondo_servicios.png") no-repeat center center;
+  background: url("../images/fondo_servicios3.png") repeat center center;
   background-size: cover;
   background-attachment: fixed !important;
   color: #fff; }
@@ -429,6 +436,9 @@ EMPIEZAN LAS MEDIAS QUERIES
     top: 3rem;
     -webkit-transition: all 1s ease;
     transition: all 1s ease; }
+
+  .servicios {
+    background: url("../images/fondo_servicios.png") no-repeat center center; }
 
   .servicios article {
     -webkit-box-orient: vertical;
