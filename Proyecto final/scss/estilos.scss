@@ -232,6 +232,19 @@ SECCION SERVICIOS
     opacity: 1;
     color: $principal;
 }
+.servicios article .fa{
+    margin-right: 1rem;
+    list-style: none;
+    font-size: 2.4rem;
+    background: $principal;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
 /*---------------------------------
 SECCION ÚLTIMOS PROYECTOS
 ------------------------------------*/
