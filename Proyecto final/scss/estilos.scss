@@ -4,6 +4,10 @@
 $texto:#111111;
 $principal:#12AFAF;
 $secundario:#009500;
+$fondo: linear-gradient(to left, #7b4397,#12Afaf);
+$fondo-radial: radial-gradient(#7b4397,#12Afaf);
+$fondo2: linear-gradient(to left,#7b4397,#dc2430);
+
 html {
     font-size: 15px;
 }
@@ -149,7 +153,7 @@ SECCION AGENCIA
 ------------------------------*/
 
 .agencia {
-    background: $principal;
+    background: url("../images/bg-pattern.png"), $fondo-radial;
     color: #fff;
 }
 .agencia img {
@@ -162,20 +166,25 @@ SECCION TU MEJOR ELECCIÓN
 ----------------------------*/
 
 .tu-mejor-eleccion h2 span {
-    color: $principal;
+    background: $fondo2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .tu-mejor-eleccion ul,
 .tu-mejor-eleccion ul li {
     list-style: none;
 }
 .tu-mejor-eleccion ul li .fa {
-    font-size: 2.3rem;
-    background: $secundario;
+    font-size: 3rem;
     border-radius: 50%;
     width: 4.7rem;
     height: 4.7rem;
     line-height: 4.7rem;
     color: #fff;
+
+    background: $fondo2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .tu-mejor-eleccion ul li .contenedor-eleccion h4 {
     font-size: 1.2rem;
@@ -185,12 +194,33 @@ SECCION TU MEJOR ELECCIÓN
 .tu-mejor-eleccion ul li {
     min-height: 9rem;
 }
+
+.tu-mejor-eleccion #imagen-central{
+    max-height: 25rem;
+}
+
+// Esta clase no es utilizada solo es por pruebas
+.tu-mejor-eleccion ul li .fe{
+    font-family: 'simple-line-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 80px;
+    background: linear-gradient(to left,#7b4397,#dc2430);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /*-------------------------------
 SECCION SERVICIOS
 --------------------------------*/
 
 .servicios {
-    background: url("../images/fondo-servicios.jpg") no-repeat center center;
+    background: url("../images/fondo-encabezado.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed !important;
     color: #fff;
@@ -236,7 +266,7 @@ SECCION SERVICIOS
     margin-right: 1rem;
     list-style: none;
     font-size: 2.4rem;
-    background: $principal;
+    background: $fondo2;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
@@ -437,6 +467,20 @@ EMPIEZAN LAS MEDIAS QUERIES
         margin-bottom: 1rem;
         transition: all 1s ease
     }
+    .servicios article .fa {
+        width: 9rem;
+        height: 9rem;
+        line-height: 9rem;
+        font-size: 5rem;
+        overflow: hidden;
+        margin-right: 0px;
+        margin-bottom: 1rem;
+        transition: all 1s ease;
+    }
+    .servicios article:hover .fa {
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+    }
     .servicios article:hover img {
         transform: rotateY(360deg);
         transform-style: preserve-3d
@@ -476,7 +520,7 @@ EMPIEZAN LAS MEDIAS QUERIES
         font-size: 16px
     }
     .bienvenidos {
-        background: url("../images/fondo-encabezado-grande.jpg") no-repeat center top;
+        background: url("../images/fondo-encabezado-grande.png") no-repeat center top;
         background-size: cover
     }
     .tu-mejor-eleccion ul li {
@@ -487,12 +531,17 @@ EMPIEZAN LAS MEDIAS QUERIES
         text-align: center;
         flex: 0 1 auto;
         margin-right: 1rem;
-        transition: all 1s ease
+        transition: all 1s ease;
+        background: $fondo2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .tu-mejor-eleccion ul li:hover .fa {
         transform: rotateY(360deg);
         transform-style: preserve-3d;
-        background: #12AFAF
+        background: $fondo2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .contenedor-eleccion {
         flex: 1 0 0px
@@ -511,7 +560,7 @@ EMPIEZAN LAS MEDIAS QUERIES
         width: 100%
     }
     .servicios {
-        background: url("../images/fondo-servicios-grande.jpg") no-repeat center center;
+        background: url("../images/fondo-encabezado-grande.png") no-repeat center center;
         background-size: cover
     }
 }
