@@ -55,6 +55,13 @@ body {
   background: transparent;
   color: #fff; }
 
+.boton-buscar .fa,
+.boton-menu .fa {
+  background: -webkit-gradient(linear, right top, left top, from(#7b4397), to(#24d4dc));
+  background: linear-gradient(to left, #7b4397, #24d4dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .boton-buscar:focus,
 .boton-menu:focus {
   outline: 0; }
@@ -135,14 +142,17 @@ body {
   margin-top: 4rem; }
 
 .texto-encabezado .btn-primary {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  border-color: transparent; }
 
 .btn-primary {
-  color: #fff;
-  background-color: #12AFAF;
-  border-color: transparent;
   -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+  background: -webkit-gradient(linear, right top, left top, from(#7b4397), to(#12Afaf));
+  background: linear-gradient(to left, #7b4397, #12Afaf); }
 
 .btn-primary:hover,
 .btn-primary:focus,
