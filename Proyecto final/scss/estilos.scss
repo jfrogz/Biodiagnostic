@@ -421,6 +421,29 @@ ESTILOS PAGINA SERVICIOS
     transform-style: preserve-3d;
 }
 /*---------------------------------------------
+Nuestros precios
+--------------------------------------------*/
+
+#tabla-precios {
+    font-size: 0.8rem;
+}
+#tabla-paquetes {
+    font-size: 0.8rem;
+}
+.table th, .table td {
+    padding: 0.1rem;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+}
+.thead-inverse {
+    background: $fondo;
+}
+
+.thead-inverse th {
+    color: #fff;
+    background-color: transparent;
+}
+/*---------------------------------------------
 EMPIEZAN LAS MEDIAS QUERIES
 --------------------------------------------*/
 
